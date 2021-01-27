@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    list-style:none;
   }
   
   /* Style the body */
@@ -10,17 +11,29 @@
   
   /* Header/logo Title */
   .header {
-    padding: 60px;
+    padding: 20px;
     text-align: center;
     background: #1abc9c;
     color: white;
   }
-  
+
   /* Style the top navigation bar */
   .navbar {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333;
   }
+
+  /* mobile top navigation bar*/
+    .hamburger {
+    display: none;
+    cursor: pointer;
+    }
+
+    .hamburger {
+      outline: none;
+    }
   
   /* Style the navigation bar links */
   .navbar a {
@@ -40,6 +53,7 @@
   .row {  
     display: flex;
     flex-wrap: wrap;
+    
   }
   
   /* Create two unequal columns that sits next to each other */
@@ -79,4 +93,42 @@
     i class{
         font-size: 100px;
     }
+  /* Social button links */
+
+    .social-buttons,
+    .social-buttons li {
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+    .social-buttons li {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      
+
+    .social-buttons li {
+      flex-basis: 25%;
+      flex-shrink: 0;
+      flex-grow: 1;
+    }
+
+  /*hamburger menu*/
+  @media screen and (max-width: 767px) {
+    .nav-ul {
+      display: none;
+      width: 100%;
+    }
+
+    .nav-ul.show {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+
+  }
+
   }

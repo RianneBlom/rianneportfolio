@@ -2,6 +2,7 @@
 <html>
 <head>
 <script src="https://kit.fontawesome.com/b3ee7dd35c.js" crossorigin="anonymous"></script>
+<script type='text/javascript' src='script.js'></script>
 <title>Rianne Student Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"><style>
+
 
 </style>
 </head>
@@ -22,10 +24,15 @@
 
 <!-- Navigation Bar -->
 <div class="navbar">
+  <button class="hamburger" id="hamburger">
+    <i .hamburger class="fas fa-bars"></i>
+  </button>
+  <ul class="nav-ul" id="nav-ul">
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
+  </ul>
 </div>
 
 <!-- The flexible grid (content) -->
@@ -37,9 +44,17 @@
     <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
     <h3>More Text</h3>
     <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+    <ul class="social-buttons">
+      <li>
+    <button class="githubbutton" >
+    <i class="fab fa-github-square fa-10x"></i></button><br>
+  </li>
+  <li>
+    <button class="facebookbutton">
+    <i class="fab fa-facebook-square fa-10x"></i>
+  </button>
+  </li>
+    </ul>
   </div>
   <div class="main">
     <h2>TITLE HEADING</h2>
